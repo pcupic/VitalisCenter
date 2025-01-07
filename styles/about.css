@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #004d40;
+    color: white;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #80cbc4;
+}
+
+.hero {
+    background: url('../images/ceo.jpg') no-repeat center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.timeline {
+    padding: 2rem 1rem;
+    background: #e0f2f1;
+    text-align: center;
+}
+
+.timeline h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.timeline-item {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #004d40;
+}
+
+.values {
+    padding: 2rem 1rem;
+    background: #80cbc4;  /* Lighter green for contrast */
+    color: #00332e;  /* Darker text color */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+.values h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.value-item {
+    background: white;
+    padding: 1.5rem;
+    width: 22%; /* Adjust the width to fit 4 items in a row */
+    max-width: 250px; /* Ensure items don't get too large */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.value-item h3 {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 1rem;
+}
+
+.value-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.mission {
+    padding: 2rem 1rem;
+    background: #004d40;
+    color: white;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mission ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mission li {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background: #00332e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
