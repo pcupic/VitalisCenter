@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body>
+
+    <!-- Blob Background -->
+    <div class="blob-outer">
+        <div class="blob-inner">
+            <div class="blob"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Vitalis Center</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        
+        <!-- Contact Info Section -->
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Health Street, Wellness City</p>
+            <p><strong>Phone:</strong> +1 (234) 567-890</p>
+            <p><strong>Email:</strong> contact@vitaliscenter.com</p>
+        </div>
+
+        <form class="contact-form" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" id="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="error-message" style="color: red; display: none;">Please fill out all fields correctly!</p>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Vitalis Center. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

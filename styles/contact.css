@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background-color: black;
+}
+
+/* Blob Background */
+.blob-outer {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    filter: blur(100px);
+}
+
+.blob-inner {
+    position: absolute;
+    border-radius: 99999px;
+    inset: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1000px;
+    overflow: hidden;
+    transform: scale(0.8);
+}
+
+.blob {
+    position: absolute;
+    border-radius: 99999px;
+    inset: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: conic-gradient(from 0deg, #FB4141, #2E5077, #F09319, #8D0B41, #7E1891, #355F2E, 
+        #024CAA, #00FF9C);
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(2);
+    }    
+    100% {
+        transform: rotate(360deg) scale(2);
+    }
+}
+
+/* Navigation Bar with Transparency & Blur */
+header {
+    padding: 1rem 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Make sure it's above other content */
+    backdrop-filter: blur(9px) saturate(200%);
+    -webkit-backdrop-filter: blur(9px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.65);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #80cbc4;
+}
+
+/* Contact Section Specific Styling */
+.contact-section {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-section h2 {
+    color: white;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+/* Form Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #004d40;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #80cbc4;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(17, 25, 40, 0.65);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(9px) saturate(200%);
+    -webkit-backdrop-filter: blur(9px) saturate(200%);
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
