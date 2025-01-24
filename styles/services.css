@@ -5,39 +5,55 @@ body {
 }
 
 header {
-    background: #004d40;
+    background: linear-gradient(to right, #004d40, #00695c, #00796b); 
     color: white;
-    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0px 30px;
 }
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: 0 auto;
+    padding: 15px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    transform: scale(1.02);
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 28px;
     font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .nav-links {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 25px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 20px;
 }
 
 .nav-links a:hover {
-    color: #80cbc4;
+    background-color: white;
+    color: #004d40;
+    font-weight: bold;
 }
+
 
 .services {
     padding: 2rem;
@@ -90,8 +106,10 @@ table th {
 }
 
 footer {
-    background-color: #004d40;
+    background: #004d40; 
     color: white;
-    padding: 2rem;
     text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }

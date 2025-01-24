@@ -12,33 +12,33 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #388e3c, #66bb6a); 
+    background: linear-gradient(to right, #004d40, #00695c, #00796b);
     color: white;
     position: sticky;
     top: 0;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px 30px;
-    
 }
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .navbar:hover {
-    transform: scale(1.02); 
+    transform: scale(1.02);
 }
 
 .logo {
     font-size: 28px;
     font-weight: bold;
     font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .nav-links {
@@ -56,10 +56,11 @@ header {
 }
 
 .nav-links a:hover {
-    background-color: white; 
-    color: #4caf50;
+    background-color: white;
+    color: #004d40;
     font-weight: bold;
 }
+
 
 .hero {
     background: url('../images/home.jpg') no-repeat center center/cover;
@@ -151,7 +152,7 @@ header {
 }
 
 footer {
-    background: linear-gradient(to right, #66bb6a, #388e3c); 
+    background: #004d40; 
     color: white;
     text-align: center;
     padding: 20px;
