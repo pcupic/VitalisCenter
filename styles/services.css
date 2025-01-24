@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #004d40, #00695c, #00796b); 
+    background: linear-gradient(to right, #004d40, #00695c, #00796b);
     color: white;
     position: sticky;
     top: 0;
@@ -38,6 +38,7 @@ header {
     list-style-type: none;
     display: flex;
     gap: 25px;
+    position: relative;
 }
 
 .nav-links a {
@@ -46,6 +47,7 @@ header {
     font-size: 18px;
     padding: 10px 15px;
     border-radius: 20px;
+    position: relative;
 }
 
 .nav-links a:hover {
@@ -54,6 +56,44 @@ header {
     font-weight: bold;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 10px;
+    z-index: 1000;
+    width: 200px; 
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: #004d40;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 .services {
     padding: 2rem;
