@@ -59,45 +59,6 @@ header {
     font-weight: bold;
 }
 
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
-    display: none; 
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    list-style: none;
-    padding: 10px 10px;
-    z-index: 1000;
-    width: 200px; 
-}
-
-.dropdown-menu li {
-    margin: 0;
-}
-
-.dropdown-menu a {
-    color: #004d40;
-    padding: 10px 20px;
-    display: block;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.dropdown-menu a:hover {
-    background-color: #004d40;
-    color: white;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
 .contact-section {
     text-align: center;
     margin: 40px auto;
