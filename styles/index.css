@@ -160,17 +160,3 @@ footer {
     font-size: 14px;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
-
-@media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
-
-    .hero-content {
-        padding: 15px 20px;
-    }
-
-    .introduction, .quick-info {
-        margin-bottom: 20px;
-    }
-}

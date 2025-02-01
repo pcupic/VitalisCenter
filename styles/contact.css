@@ -128,21 +128,3 @@ footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-    .contact-section {
-        padding: 15px;
-    }
-
-    .contact-form {
-        padding: 15px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        padding: 10px;
-    }
-
-    .contact-form button {
-        padding: 10px 20px;
-    }
-}
